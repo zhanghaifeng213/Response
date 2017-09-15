@@ -1,0 +1,420 @@
+<style>
+    .feature-module, .module-heading, .features-module, .features-wrapper, .more-features {max-width:1440px;margin:0 auto;}
+	.mgFeature{color:#292929;font-weight:normal;}
+	.mgFeature_more{width:100%;overflow:hidden;display:block;padding-bottom:40px}
+	@media all and (min-width:1025px) and (max-width:1280px) {.mgFeature_more{padding-bottom:40px} }
+	@media all and (min-width:769px) and (max-width:1024px) {.mgFeature_more{padding-bottom:30px} }
+	@media all and (min-width:481px) and (max-width:768px) {.mgFeature_more{padding-bottom:20px} }
+	@media all and (max-width:480px) {.mgFeature_more{padding-bottom:20px} }
+	.mgFeature{overflow:hidden;width:96%;margin:0 auto;padding:0 2%}
+	@media all and (min-width:1025px) and (max-width:1280px) {.mgFeature{overflow:hidden;width:96%;margin:0 auto;padding:0 2%} }
+	@media all and (min-width:769px) and (max-width:1024px) {.mgFeature{overflow:hidden;width:94%;margin:0 auto;padding:0 3%} }
+	@media all and (min-width:481px) and (max-width:768px) {.mgFeature{overflow:hidden;width:92%;margin:0 auto;padding:0 4%} }
+	@media all and (max-width:480px) {.mgFeature{overflow:hidden;width:90%;margin:0 auto;padding:0 5%} }
+	.features_description{font-size:18px;font-size:1.125rem;padding:40px 0 20px 0}
+	@media all and (min-width:1025px) and (max-width:1280px) {.features_description{font-size:17px;font-size:1.0625rem;padding:40px 0 20px 0} }
+	@media all and (min-width:769px) and (max-width:1024px) {.features_description{font-size:16px;font-size:1rem;padding:30px 0 15px 0} }
+	@media all and (min-width:481px) and (max-width:768px) {.features_description{font-size:16px;font-size:1rem;padding:20px 0 10px 0} }
+	@media all and (max-width:480px) {.features_description{font-size:16px;font-size:1rem;padding:20px 0 10px 0} }
+	.keynote_large_wide .description_pci,.keynote_large .description_pci,.keynote_large2 .description_pci,.keynote_row_group .description_pci{font-size:18px;font-size:1.125rem}
+	.keynote_large_wide h2.title,.keynote_large h2.title,.keynote_large2 h2.title,.keynote_row_group .title,.keynote_row_group .keynote_small .title,.keynote_row_group .keynote_small_wide .title,.npc_hdmi h2.title{font-size:24px;font-size:1.5rem;font-weight:bold}
+	.keynote_rbox_small h2.title{font-size:20px!important;font-size:1.25rem!important;font-weight:bold}
+	.keynote_row_group h2.text{font-size:14px;font-size:.875rem}
+	@media all and (min-width:1025px) and (max-width:1280px) {
+		.keynote_large_wide .description_pci,.keynote_large .description_pci,.keynote_large2 .description_pci,.keynote_row_group .description_pci{font-size:17px;font-size:1.0625rem}
+		.keynote_large_wide h2.title,.keynote_large h2.title,.keynote_large2 h2.title,.keynote_row_group .title,.keynote_row_group .keynote_small .title,.keynote_row_group .keynote_small_wide .title,.npc_hdmi h2.title{font-size:23px;font-size:1.4375rem}
+		.keynote_rbox_small h2.title{font-size:18px;font-size:1.125rem;font-weight:bold}
+		.keynote_row_group h2.text{font-size:14px;font-size:.875rem}
+	}
+	@media all and (min-width:769px) and (max-width:1024px) {
+		.keynote_large_wide .description_pci,.keynote_large .description_pci,.keynote_large2 .description_pci,.keynote_row_group .description_pci{font-size:16px;font-size:1rem}
+		.keynote_large_wide h2.title,.keynote_large h2.title,.keynote_large2 h2.title,.keynote_row_group .title,.keynote_row_group .keynote_small .title,.keynote_row_group .keynote_small_wide .title,.npc_hdmi h2.title{font-size:22px;font-size:1.375rem}
+		.keynote_rbox_small h2.title{font-size:18px;font-size:1.125rem;font-weight:bold}
+		.keynote_row_group h2.text{font-size:14px;font-size:.875rem}
+	}
+	@media all and (min-width:481px) and (max-width:768px) {
+		.keynote_large_wide .description_pci,.keynote_large .description_pci,.keynote_large2 .description_pci,.keynote_row_group .description_pci{font-size:16px;font-size:1rem}
+		.keynote_large_wide h2.title,.keynote_large h2.title,.keynote_large2 h2.title,.keynote_row_group .title,.keynote_row_group .keynote_small .title,.keynote_row_group .keynote_small_wide .title,.npc_hdmi h2.title{font-size:21px;font-size:1.3125rem}
+		.keynote_rbox_small h2.title{font-size:16px;font-size:1rem;font-weight:bold}
+		.keynote_row_group h2.text{font-size:13px;font-size:.8125rem}
+	}
+	@media all and (max-width:480px) {
+		.keynote_large_wide .description_pci,.keynote_large .description_pci,keynote_large2 .description_pci,.keynote_row_group .description_pci{font-size:16px;font-size:1rem}
+		.keynote_large_wide h2.title,.keynote_large h2.title,.keynote_large2 h2.title,.keynote_row_group .title,.keynote_row_group .keynote_small .title,.keynote_row_group .keynote_small_wide .title,.npc_hdmi h2.title{font-size:21px;font-size:1.3125rem}
+		.keynote_rbox_small h2.title{font-size:16px;font-size:1rem;font-weight:bold}
+		.keynote_row_group h2.text{font-size:13px;font-size:.8125rem}
+	}
+	.description_pci small{font-size:14px;font-size:.875rem;padding:20px 0 0 0;clear:both;display:block;width:auto}
+	@media all and (min-width:1025px) and (max-width:1280px) {.description_pci small{font-size:14px;font-size:.875rem;padding:20px 0 0 0} }
+	@media all and (min-width:769px) and (max-width:1024px) {.description_pci small{font-size:14px;font-size:.875rem;padding:20px 0 0 0} }
+	@media all and (min-width:481px) and (max-width:768px) {.description_pci small{font-size:13px;font-size:.8125rem;padding:15px 0 0 0} }
+	@media all and (max-width:480px) {.description_pci small{font-size:13px;font-size:.8125rem;padding:15px 0 0 0} }
+	.description_pci b,.description_pci strong{max-width:100%;display:block;overflow:hidden}
+	.keynote_large_wide{width:100%;overflow:hidden;padding:40px 0 20px 0}
+	.keynote_large_wide h2.title{text-align:left;padding-bottom:20px}
+	.keynote_large_wide img{width:38%;float:left;margin-right:2%}
+	.keynote_large_wide .description_pci{width:auto}
+	@media all and (min-width:1025px) and (max-width:1280px) {
+		.keynote_large_wide{width:100%;overflow:hidden;padding:40px 0 20px 0}
+		.keynote_large_wide h2.title{text-align:left;padding-bottom:20px}
+		.keynote_large_wide img{width:38%;float:left;margin-right:2%}
+		.keynote_large_wide .description_pci{width:auto}
+	}
+	@media all and (min-width:769px) and (max-width:1024px) {
+		.keynote_large_wide{width:100%;overflow:hidden;text-align:center;padding:30px 0 15px 0}
+		.keynote_large_wide h2.title{text-align:left;padding-bottom:10px}
+		.keynote_large_wide img{width:100%;float:left;margin-right:0;padding-bottom:10px}
+		.keynote_large_wide .description_pci{width:100%;text-align:left}
+	}
+	@media all and (min-width:481px) and (max-width:768px) {
+		.keynote_large_wide{width:100%;overflow:hidden;text-align:center;padding:20px 0 10px 0}
+		.keynote_large_wide h2.title{text-align:left;padding-bottom:10px}
+		.keynote_large_wide img{width:100%;float:left;margin-left:0;padding-bottom:10px}
+		.keynote_large_wide .description_pci{width:100%;text-align:left}
+	}
+	@media all and (max-width:480px) {
+		.keynote_large_wide{width:100%;overflow:hidden;text-align:center;padding:20px 0 10px 0}
+		.keynote_large_wide h2.title{text-align:left;padding-bottom:10px}
+		.keynote_large_wide img{width:100%;float:left;margin-right:0;padding-bottom:10px}
+		.keynote_large_wide .description_pci{width:100%;text-align:left}
+	}
+	.keynote_row_group{width:100%;overflow:hidden;padding:40px 0 20px 0}
+	.keynote_row_group .row_left,.keynote_row_group .row_right{width:48%}
+	.keynote_row_group .row_left{float:left}
+	.keynote_row_group .row_right{float:right}
+	.keynote_row_group .keynote_small_wide{width:100%;overflow:hidden;text-align:center;padding-bottom:20px}
+	.keynote_row_group .keynote_small_wide img{min-width:inherit;max-width:100%;margin:10px 0}
+	.keynote_row_group .keynote_small_wide h2.title{text-align:left;padding-bottom:5px}
+	.keynote_row_group .keynote_small_wide .description_pci{text-align:left;padding-top:5px}
+	@media all and (min-width:1025px) and (max-width:1280px) {
+		.keynote_row_group{width:100%;overflow:hidden;padding:40px 0 20px 0}
+		.keynote_row_group .row_left{width:48%;float:left}
+		.keynote_row_group .row_right{width:48%;float:right}
+		.keynote_row_group .keynote_small_wide{width:100%;overflow:hidden;text-align:center}
+		.keynote_row_group .keynote_small_wide img{min-width:inherit;max-width:100%;margin:10px 0}
+		.keynote_row_group .keynote_small_wide h2.title{text-align:left;padding-bottom:5px}
+		.keynote_row_group .keynote_small_wide .description_pci{text-align:left;padding-top:5px}
+	}
+	@media all and (min-width:769px) and (max-width:1024px) {
+		.keynote_row_group{width:100%;overflow:hidden;padding:30px 0 15px 0}
+		.keynote_row_group .row_left{width:48%;float:left}
+		.keynote_row_group .row_right{width:48%;float:right}
+		.keynote_row_group .keynote_small_wide{width:100%;overflow:hidden;text-align:center}
+		.keynote_row_group .keynote_small_wide img{min-width:inherit;max-width:100%;margin:10px 0}
+		.keynote_row_group .keynote_small_wide h2.title{text-align:left;padding-bottom:5px}
+		.keynote_row_group .keynote_small_wide .description_pci{text-align:left;padding-top:5px}
+	}
+	@media all and (min-width:481px) and (max-width:768px) {
+		.keynote_row_group{width:100%;overflow:hidden;padding:20px 0 10px 0}
+		.keynote_row_group .row_left{width:100%;float:left;margin-bottom:20px}
+		.keynote_row_group .row_right{width:100%;float:right;margin-bottom:20px}
+		.keynote_row_group .keynote_small_wide{width:100%;overflow:hidden;text-align:center}
+		.keynote_row_group .keynote_small_wide img{min-width:inherit;max-width:100%;margin:10px 0}
+		.keynote_row_group .keynote_small_wide h2.title{text-align:left;padding-bottom:5px}
+		.keynote_row_group .keynote_small_wide .description_pci{text-align:left;padding-top:5px}
+	}
+	@media all and (max-width:480px) {
+		.keynote_row_group{width:100%;overflow:hidden;padding:20px 0 10px 0}
+		.keynote_row_group .row_left{width:100%;float:left;margin-bottom:20px}
+		.keynote_row_group .row_right{width:100%;float:right;margin-bottom:20px}
+		.keynote_row_group .keynote_small_wide{width:100%;overflow:hidden;text-align:center}
+		.keynote_row_group .keynote_small_wide img{min-width:inherit;max-width:100%;margin:10px 0}
+		.keynote_row_group .keynote_small_wide h2.title{text-align:left;padding-bottom:5px}
+		.keynote_row_group .keynote_small_wide .description_pci{text-align:left;padding-top:5px}
+	}
+	.keynote_mini{width:100%;overflow:hidden;padding-bottom:20px}
+	.keynote_mini .sum{float:left;padding:0 20px 10px 0}
+	.keynote_small{width:100%;overflow:hidden}
+	.keynote_small .sum{float:left;min-width:inherit;max-width:47%;margin-right:3%;margin-bottom:2%}
+	.keynote_small .sum img{min-width:inherit;max-width:100%}
+	.keynote_small .text{min-width:50%;max-width:auto}
+	.keynote_small .text h2.title{text-align:left;padding-bottom:5px}
+	.keynote_small .text .description_pci{text-align:left;padding-top:5px}
+	@media all and (min-width:1025px) and (max-width:1280px) {
+		.keynote_small{width:100%;overflow:hidden}
+		.keynote_small .sum{float:left;min-width:inherit;max-width:100%;width:100%;text-align:center;margin-right:0;margin-bottom:0}
+		.keynote_small .sum img{min-height:inherit;max-height:100%;margin:20px 0}
+		.keynote_small .text{min-width:inherit;max-width:100%;width:100%;float:left}
+	}
+	@media all and (min-width:769px) and (max-width:1024px) {
+		.keynote_small{width:100%;overflow:hidden}
+		.keynote_small .sum{float:left;min-width:inherit;max-width:100%;width:100%;text-align:center;margin-right:0;margin-bottom:0}
+		.keynote_small .sum img{min-height:inherit;max-height:100%;margin:20px 0}
+		.keynote_small .text{min-width:inherit;max-width:100%;width:100%;float:left}
+	}
+	@media all and (min-width:481px) and (max-width:768px) {
+		.keynote_small{width:100%;overflow:hidden}
+		.keynote_small .sum{float:left;min-width:inherit;max-width:100%;width:100%;text-align:center;margin-right:0;margin-bottom:0}
+		.keynote_small .sum img{min-height:inherit;max-height:100%;margin:20px 0}
+		.keynote_small .text{min-width:inherit;max-width:100%;width:100%;float:left}
+	}
+	@media all and (max-width:480px) {
+		.keynote_small{width:100%;overflow:hidden}
+		.keynote_small .sum{float:left;min-width:inherit;max-width:100%;width:100%;text-align:center;margin-right:0;margin-bottom:0}
+		.keynote_small .sum img{min-height:inherit;max-height:100%;margin:20px 0}
+		.keynote_small .text{min-width:inherit;max-width:100%;width:100%;float:left}
+	}	
+	.npc_hdmi{width:100%;overflow:hidden;text-align:center;padding:40px 0 20px 0}
+	.npc_hdmi h2.title{text-align:left;padding-bottom:10px}
+	.npc_hdmi img{min-width:inherit;max-width:100%}
+	@media all and (min-width:1025px) and (max-width:1280px) {.npc_hdmi{padding:40px 0 20px 0} }
+	@media all and (min-width:769px) and (max-width:1024px) {.npc_hdmi{padding:30px 0 15px 0} }
+	@media all and (min-width:481px) and (max-width:768px) {.npc_hdmi{padding:20px 0 10px 0} }
+	@media all and (max-width:480px) {.npc_hdmi{padding:20px 0 10px 0} }
+	.keynote_rbox_small_group{width:100%;overflow:hidden}
+	.keynote_rbox_small_group .keynote_rbox_small{float:left;overflow:hidden;width:48%;box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;-webkit-box-sizing:border-box;border-top:#ebebeb 1px solid;border-left:#ebebeb 1px solid;border-right:#ebebeb 3px solid;border-bottom:#ebebeb 3px solid;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;margin:10px 1%}
+	.keynote_rbox_small_group .keynote_rbox_small .inbox{float:left;padding:2.5%;width:95%}
+	.keynote_rbox_small_group .keynote_rbox_small .sum{float:left;font-size:0;line-height:0;margin-right:20px}
+	.keynote_rbox_small_group .keynote_rbox_small .sum img{min-width:inherit;max-width:100%;    padding-left: 10px}
+	.keynote_rbox_small_group .keynote_rbox_small .text{width:auto}
+	.keynote_rbox_small_group .keynote_rbox_small{float:left}
+	.keynote_rbox_small_group .keynote_rbox_small .inbox{float:left}
+	.keynote_rbox_small_group .keynote_rbox_small .sum{float:left}
+	@media all and (min-width:1025px) and (max-width:1280px) {
+		.keynote_rbox_small_group{width:100%;overflow:hidden}
+		.keynote_rbox_small_group .keynote_rbox_small{float:left;overflow:hidden;width:48%;box-sizing:border-box;border-top:#ebebeb 1px solid;border-left:#ebebeb 1px solid;border-right:#ebebeb 3px solid;border-bottom:#ebebeb 3px solid;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;margin:10px 1%}
+		.keynote_rbox_small_group .keynote_rbox_small .inbox{float:left;padding:2.5%;width:95%}
+		.keynote_rbox_small_group .keynote_rbox_small .sum{float:left;font-size:0;line-height:0;margin-right:20px}
+		.keynote_rbox_small_group .keynote_rbox_small .sum img{min-width:inherit;max-width:100%;    padding-left: 10px}
+		.keynote_rbox_small_group .keynote_rbox_small .text{width:auto}
+	}
+	@media all and (min-width:769px) and (max-width:1024px) {
+		.keynote_rbox_small_group{width:100%;overflow:hidden}
+		.keynote_rbox_small_group .keynote_rbox_small{float:left;overflow:hidden;width:48%;box-sizing:border-box;border-top:#ebebeb 1px solid;border-left:#ebebeb 1px solid;border-right:#ebebeb 3px solid;border-bottom:#ebebeb 3px solid;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;margin:10px 1%}
+		.keynote_rbox_small_group .keynote_rbox_small .inbox{float:left;padding:2.5%;width:95%}
+		.keynote_rbox_small_group .keynote_rbox_small .sum{float:left;font-size:0;line-height:0;margin-right:20px}
+		.keynote_rbox_small_group .keynote_rbox_small .sum img{min-width:inherit;max-width:100%;    padding-left: 10px}
+		.keynote_rbox_small_group .keynote_rbox_small .text{width:auto}
+	}
+	@media all and (min-width:481px) and (max-width:768px) {
+		.keynote_rbox_small_group{width:100%;overflow:hidden}
+		.keynote_rbox_small_group .keynote_rbox_small{float:left;overflow:hidden;width:98%;box-sizing:border-box;border-top:#ebebeb 1px solid;border-left:#ebebeb 1px solid;border-right:#ebebeb 3px solid;border-bottom:#ebebeb 3px solid;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;margin:10px 1%}
+		.keynote_rbox_small_group .keynote_rbox_small .inbox{float:left;padding:2.5%;width:95%}
+		.keynote_rbox_small_group .keynote_rbox_small .sum{float:left;font-size:0;line-height:0;margin-right:20px}
+		.keynote_rbox_small_group .keynote_rbox_small .sum img{min-width:inherit;max-width:100%;    padding-left: 10px}
+		.keynote_rbox_small_group .keynote_rbox_small .text{width:auto}
+	}
+	@media all and (max-width:480px) {
+		.keynote_rbox_small_group{width:100%;overflow:hidden}
+		.keynote_rbox_small_group .keynote_rbox_small{float:left;overflow:hidden;width:98%;box-sizing:border-box;border-top:#ebebeb 1px solid;border-left:#ebebeb 1px solid;border-right:#ebebeb 3px solid;border-bottom:#ebebeb 3px solid;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;margin:10px 1%}
+		.keynote_rbox_small_group .keynote_rbox_small .inbox{float:left;padding:1.5%;width:97%}
+		.keynote_rbox_small_group .keynote_rbox_small .sum{float:left;font-size:0;line-height:0;margin-right:0}
+		.keynote_rbox_small_group .keynote_rbox_small .sum img{min-width:inherit;max-width:80%}
+		.keynote_rbox_small_group .keynote_rbox_small .text{width:auto}
+	}
+	.npc_youTube h2.title{margin-bottom:10px}
+	.accShow{display:none}
+	
+	/* b2c font reset */
+	/* common */
+	.b2c .mgFeature{font-weight:normal;}
+	.b2c .features_description{font-size:18px;font-size:1.125rem}
+	@media all and (min-width:1025px) and (max-width:1280px) {.b2c .features_description{font-size:17px;font-size:1.0625rem} }
+	@media all and (min-width:769px) and (max-width:1024px) {.b2c .features_description{font-size:16px;font-size:1rem} }
+	@media all and (min-width:481px) and (max-width:768px) {.b2c .features_description{font-size:16px;font-size:1rem} }
+	@media all and (max-width:480px) {.b2c .features_description{font-size:16px;font-size:1rem} }
+	.b2c .keynote_large_wide .description_pci,.b2c .keynote_large .description_pci,.b2c .keynote_large2 .description_pci,.b2c .keynote_row_group .description_pci{font-size:18px;font-size:1.125rem}
+	.b2c .keynote_large_wide h2.title,.b2c .keynote_large h2.title,.b2c .keynote_large2 h2.title,.b2c .keynote_row_group .title,.b2c .keynote_row_group .keynote_small .title,.b2c .npc_hdmi h2.title{font-size:24px;font-size:1.5rem;font-weight:bold}
+	.b2c .keynote_rbox_small h2.title{font-size:20px!important;font-size:1.25rem!important;font-weight:bold}
+	.b2c .keynote_row_group h2.text{font-size:14px;font-size:.875rem}
+	@media all and (min-width:1025px) and (max-width:1280px) {
+		.b2c .keynote_large_wide .description_pci,.keynote_large .description_pci,.b2c .keynote_large2 .description_pci,.b2c .keynote_row_group .description_pci{font-size:17px;font-size:1.0625rem}
+		.b2c .keynote_large_wide h2.title,.b2c .keynote_large h2.title,.b2c .keynote_large2 h2.title,.b2c .keynote_row_group .title,.b2c .keynote_row_group .keynote_small .title,.b2c .npc_hdmi h2.title{font-size:23px;font-size:1.4375rem}
+		.b2c .keynote_rbox_small h2.title{font-size:18px;font-size:1.125rem;font-weight:bold}
+		.b2c .keynote_row_group h2.text{font-size:14px;font-size:.875rem}
+	}
+	@media all and (min-width:769px) and (max-width:1024px) {
+		.b2c .keynote_large_wide .description_pci,.b2c .keynote_large .description_pci,.b2c .keynote_large2 .description_pci,.b2c .keynote_row_group .description_pci{font-size:16px;font-size:1rem}
+		.b2c .keynote_large_wide h2.title,.b2c .keynote_large h2.title,.b2c .keynote_large2 h2.title,.b2c .keynote_row_group .title,.b2c .keynote_row_group .keynote_small .title,.b2c .npc_hdmi h2.title{font-size:22px;font-size:1.375rem}
+		.b2c .keynote_rbox_small h2.title{font-size:18px;font-size:1.125rem;font-weight:bold}
+		.b2c .keynote_row_group h2.text{font-size:14px;font-size:.875rem}
+	}
+	@media all and (min-width:481px) and (max-width:768px) {
+		.b2c .keynote_large_wide .description_pci,.b2c .keynote_large .description_pci,.b2c .keynote_large2 .description_pci,.b2c .keynote_row_group .description_pci{font-size:16px;font-size:1rem}
+		.b2c .keynote_large_wide h2.title,.b2c .keynote_large h2.title,.b2c .keynote_large2 h2.title,.b2c .keynote_row_group .title,.b2c .keynote_row_group .keynote_small .title,.b2c .npc_hdmi h2.title{font-size:21px;font-size:1.3125rem}
+		.b2c .keynote_rbox_small h2.title{font-size:16px;font-size:1rem;font-weight:bold}
+		.b2c .keynote_row_group h2.text{font-size:13px;font-size:.8125rem}
+	}
+	@media all and (max-width:480px) {
+		.b2c .keynote_large_wide .description_pci,.b2c .keynote_large .description_pci,.b2c .keynote_large2 .description_pci,.b2c .keynote_row_group .description_pci{font-size:16px;font-size:1rem}
+		.b2c .keynote_large_wide h2.title,.b2c .keynote_large h2.title,.b2c .keynote_large2 h2.title,.b2c .keynote_row_group .title,.b2c .keynote_row_group .keynote_small .title,.b2c .npc_hdmi h2.title{font-size:21px;font-size:1.3125rem}
+		.b2c .keynote_rbox_small h2.title{font-size:16px;font-size:1rem;font-weight:bold}
+		.b2c .keynote_row_group h2.text{font-size:13px;font-size:.8125rem}
+	}
+	.b2c .description_pci small{font-size:14px;font-size:.875rem}
+	@media all and (min-width:1025px) and (max-width:1280px) {.b2c .description_pci small{font-size:14px;font-size:.875rem} }
+	@media all and (min-width:769px) and (max-width:1024px) {.b2c .description_pci small{font-size:14px;font-size:.875rem} }
+	@media all and (min-width:481px) and (max-width:768px) {.b2c .description_pci small{font-size:13px;font-size:.8125rem} }
+	@media all and (max-width:480px) {.b2c .description_pci small{font-size:13px;font-size:.8125rem} }
+	/* common end */
+	
+	/******************************************************
+	                      feature.css
+	*******************************************************/
+	.rtl .keynote_large_wide h2.title{text-align:right}
+	.rtl .keynote_large_wide img{float:right;margin-left:2%}
+	@media all and (min-width:1025px) and (max-width:1280px) {
+	  .rtl .keynote_large_wide h2.title{text-align:right;padding-bottom:20px}
+	  .rtl .keynote_large_wide img{width:38%;float:right;margin-left:2%}
+	}
+	@media all and (min-width:769px) and (max-width:1024px) {
+	  .rtl .keynote_large_wide h2.title{text-align:right;padding-bottom:10px}
+	  .rtl .keynote_large_wide img{width:100%;float:right;margin-left:0;padding-bottom:10px}
+	  .rtl .keynote_large_wide .description_pci{width:100%;text-align:right}
+	}
+	@media all and (min-width:481px) and (max-width:768px) {
+	  .rtl .keynote_large_wide h2.title{text-align:right;padding-bottom:10px}
+	  .rtl .keynote_large_wide img{width:100%;float:right;margin-left:0;padding-bottom:10px}
+	  .rtl .keynote_large_wide .description_pci{width:100%;text-align:right}
+	}
+	@media all and (max-width:480px) {
+	  .rtl .keynote_large_wide h2.title{text-align:right;padding-bottom:10px}
+	  .rtl .keynote_large_wide img{width:100%;float:right;margin-left:0;padding-bottom:10px}
+	  .rtl .keynote_large_wide .description_pci{width:100%;text-align:right}
+	}
+	.rtl .keynote_row_group .row_left{float:right}
+	.rtl .keynote_row_group .row_right{float:left}
+	.rtl .keynote_row_group .keynote_small_wide h2.title{text-align:right}
+	.rtl .keynote_row_group .keynote_small_wide .description_pci{text-align:right}
+	@media all and (min-width:1025px) and (max-width:1280px) {
+	  .rtl .keynote_row_group .row_left{width:48%;float:right}
+	  .rtl .keynote_row_group .row_right{width:48%;float:left}
+	  .rtl .keynote_row_group .keynote_small_wide h2.title{text-align:right;padding-bottom:5px}
+	  .rtl .keynote_row_group .keynote_small_wide .description_pci{text-align:right;padding-top:5px}
+	}
+	@media all and (min-width:769px) and (max-width:1024px) {
+	  .rtl .keynote_row_group .row_left{width:48%;float:right}
+	  .rtl .keynote_row_group .row_right{width:48%;float:left}
+	  .rtl .keynote_row_group .keynote_small_wide h2.title{text-align:right;padding-bottom:5px}
+	  .rtl .keynote_row_group .keynote_small_wide .description_pci{text-align:right;padding-top:5px}
+	}
+	@media all and (min-width:481px) and (max-width:768px) {
+	  .rtl .keynote_row_group .row_left{width:100%;float:right;margin-bottom:20px}
+	  .rtl .keynote_row_group .row_right{width:100%;float:left;margin-bottom:20px}
+	  .rtl .keynote_row_group .keynote_small_wide h2.title{text-align:right;padding-bottom:5px}
+	  .rtl .keynote_row_group .keynote_small_wide .description_pci{text-align:right;padding-top:5px}
+	}
+	@media all and (max-width:480px) {
+	  .rtl .keynote_row_group .row_left{width:100%;float:right;margin-bottom:20px}
+	  .rtl .keynote_row_group .row_right{width:100%;float:left;margin-bottom:20px}
+	  .rtl .keynote_row_group .keynote_small_wide h2.title{text-align:right;padding-bottom:5px}
+	  .rtl .keynote_row_group .keynote_small_wide .description_pci{text-align:right;padding-top:5px}
+	}
+	.rtl .keynote_mini .sum{float:right;padding:0 0 10px 20px}
+	.rtl .keynote_small .sum{float:right;margin-left:3%}
+	.rtl .keynote_small .text h2.title{text-align:right}
+	.rtl .keynote_small .text .description_pci{text-align:right}
+	@media all and (min-width:1025px) and (max-width:1280px) {
+	  .rtl .keynote_small .sum{float:right;max-width:100%;width:100%;text-align:center;margin-right:0;margin-bottom:0}
+	  .rtl .keynote_small .text{min-width:inherit;max-width:100%;width:100%;float:right}
+	}
+	@media all and (min-width:769px) and (max-width:1024px) {
+	  .rtl .keynote_small .sum{float:right;max-width:100%;width:100%;text-align:center;margin-right:0;margin-bottom:0}
+	  .rtl .keynote_small .text{min-width:inherit;max-width:100%;width:100%;float:right}
+	}
+	@media all and (min-width:481px) and (max-width:768px) {
+	  .rtl .keynote_small .sum{float:right;max-width:100%;width:100%;text-align:center;margin-right:0;margin-bottom:0}
+	  .rtl .keynote_small .text{min-width:inherit;max-width:100%;width:100%;float:right}
+	}
+	@media all and (max-width:480px) {
+	  .rtl .keynote_small .sum{float:right;max-width:100%;width:100%;text-align:center;margin-right:0;margin-bottom:0}
+	  .rtl .keynote_small .text{min-width:inherit;max-width:100%;width:100%;float:right}
+	}
+	.rtl .keynote_rbox_small_group .keynote_rbox_small{float:right}
+	.rtl .keynote_rbox_small_group .keynote_rbox_small .inbox{float:right}
+	.rtl .keynote_rbox_small_group .keynote_rbox_small .sum{float:right}
+</style>
+<div class="more-features">
+	<div class="mgFeature_more">
+		<div class="mgFeature">
+			<div class="keynote_row_group">
+				<div class="row_left">
+					<div class="keynote_small_wide">
+						<h2 class="title">Dedicated sink and water jet</h2>
+						<img title="Dedicated sink and water jet" src="http://images.samsung.com/is/image/samsung/ae-feature-top-loader-wa85j5710sw-75403985?$Download-Source$" alt="Air Turbo Drying System" />
+						<div class="description_pci">The Samsung WA4500 washing machine&acirc;s Activ Wash+ system includes a dedicated sink, which provides a convenient and unique space to hand-wash delicate items and pre-wash heavily soiled clothes. Especially as it includes a built-in water jet on the side, which can be started and stopped with the press of a button. And any water leftover can then be used for washing clothes in the drum below.</div>
+					</div>
+				</div>
+				<div class="row_right">
+				<div class="keynote_small_wide">
+					<h2 class="title">Wobble Technology: a whole new spin on protecting delicate fabrics</h2>
+					<img title="Wobble Technology: a whole new spin on protecting delicate fabrics" src="http://images.samsung.com/is/image/samsung/ae-feature-top-loader-wa85j5710sw--56753873?$ORIGIN_PNG$" alt="Wobble Technology: a whole new spin on protecting delicate fabrics" />
+					<div class="description_pci">Samsung started from a clean sheet of paper to reimagine how a washer could be gentle on clothes while delivering outstanding cleaning performance. The WA5700J uses innovative Wobble pulsators to generate multi-directional washing flow movement that moves water to all areas of your wash load. Wobble technology sets a new standard in fabric care and protection by reducing friction that causes garment-damaging tangles. It also enhances stain-fighting performance. Now you can experience increased cleaning power and treat your clothes to a higher level of delicate fabric care&mdash;all while using less water than &ldquo;non-wobble&rdquo; top-loading washers.</div>
+				</div>
+			</div>
+			
+				</div>
+		</div>
+	</div>
+</div>
+<div class="features-wrapper" data-version="default">
+	<div class="mgFeature">
+		<div class="keynote_row_group">
+			<!--<div class="row_left">
+<div class="keynote_small_wide">
+<h2 class="title">Key Visual</h2>
+<img src="http://images.samsung.com/is/image/samsung/ae-feature-top-loader-wa85j5710sw--56753872?$ORIGIN_PNG$" alt="Key Visual" title="Key Visual"><div class="description_pci">Conventional washers claim to be gentle on your clothes, but the sleek WA5700J washer takes fabric care to a new level. Samsung Wobble technology with dynamic water movement and Diamond Drum design reduce pulling forces and friction on clothes. That means your clothes tangle less and retain their shape longer. Digital Inverter Motor technology delivers long life, near-silent operation, and optimal energy efficiency. Beautiful, dependable, and gentle on all fabrics, the WA5700J is designed to be a part of your home for life.</div>
+</div>
+</div>-->
+			<div class="row_left">
+				<div class="keynote_small_wide">
+					<h2 class="title">Beauty and convenience to enhance your life</h2>
+					<img title="Beauty and convenience to enhance your life" src="http://images.samsung.com/is/image/samsung/ae-feature-top-loader-wa85j5710sw--56753875?$ORIGIN_PNG$" alt="Beauty and convenience to enhance your life" />
+					<div class="description_pci">The WA5700J is designed to be in harmony with your life. Its seamless round-edge contours and bright chrome accents put a beautiful face on power and efficiency. And thoughtful touches inside and out&mdash;including a larger, easier-to-fill detergent compartments, slanted Dual Cluster Control Panel and foldable tempered-glass door to make loading easy&mdash;take the work out of washing.</div>
+				</div>
+			</div>
+			<div class="row_right">
+				<div class="keynote_small_wide">
+					<h2 class="title">Diamond Drum</h2>
+					<img title="Diamond Drum" src="http://images.samsung.com/is/image/samsung/ae-feature-top-loader-wa85j5710sw--56753876?$ORIGIN_PNG$" alt="Diamond Drum" />
+					<div class="description_pci">The streamlined shape of the Diamond Drum provides a powerful yet gentle washing performance. The diamond embossed drum gently moves clothes along the uniquely designed drum, while smaller water holes prevent fabrics from snagging and being damaged. Get fabric care with deep-clean results.</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<div class="mgFeature">
+		<div class="keynote_row_group">
+			<!--<div class="row_left">
+<div class="keynote_small_wide">
+<h2 class="title">Digital Inverter Motor: Designed to deliver durable, quiet power</h2>
+<img src="http://images.samsung.com/is/image/samsung/ae-feature-top-loader-wa85j5710sw--56753874?$ORIGIN_PNG$" alt="Digital Inverter Motor: Designed to deliver durable, quiet power" title="Digital Inverter Motor: Designed to deliver durable, quiet power"><div class="description_pci">The power behind it all is Samsung’s breakthrough Digital Inverter Motor (DIM) technology. Built with fewer moving parts, DIM is engineered to last—and backed by a full 10-year warranty*. It’s designed to lower energy consumption by using permanent energy from magnet utilisation and to reduce environmental impact. DIM also prevents abrasions, helping to reduce noise during the spin cycle.
+ 
+*11year warranty for South East Asian countries.</div>
+</div>
+</div>--></div>
+	</div>
+	<div class="mgFeature">
+		<div class="keynote_row_group">
+			<div class="row_right">
+				<div class="keynote_small_wide">
+					<h2 class="title">Keep clothes magically lint-free</h2>
+					<img title="Keep clothes magically lint-free" src="http://images.samsung.com/is/image/samsung/ae-feature-top-loader-wa85j5710sw--56753877?$ORIGIN_PNG$" alt="Keep clothes magically lint-free" />
+					<div class="description_pci">The Samsung WA5700J washer has the magic touch when it comes to making lint vanish. Magic Filter gets to the bottom of lint problems, working below the water line to trap lint and debris that conventional washers miss. And no other filter is as easy to clean. Magic Filter even has a convenient indicator light to tell you when to empty it&mdash;just like magic.</div>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+</div>
+<div class="more-features">
+	<div class="mgFeature_more">
+		<div class="mgFeature">
+			<div class="keynote_row_group">
+				<div class="row_left">
+					<div class="keynote_small_wide">
+						<h2 class="title">Air Turbo Drying System</h2>
+						<img title="Air Turbo Drying System" src="http://images.samsung.com/is/image/samsung/ae-feature-top-loader-wa85j5710sw--56753878?$ORIGIN_PNG$" alt="Air Turbo Drying System" />
+						<div class="description_pci">Wet clothes and blankets take a long time to dry, especially when you&rsquo;re line-drying in a humid climate. During the spin cycle, the Air Turbo Drying System rotates the drum rapidly, while dual air intakes draw in more air to extract more water from your clothes.</div>
+					</div>
+				</div>
+				<div class="row_right">
+					<div class="keynote_small_wide">
+						<h2 class="title">Eco Drum Clean</h2>
+						<img title="Eco Drum Clean" src="http://images.samsung.com/is/image/samsung/ae-feature-top-loader-wa85j5710sw--56753879?$ORIGIN_PNG$" alt="Eco Drum Clean" />
+						<div class="description_pci">Wash the drum as easily as you clean your clothes by turning the dial to Eco Drum Clean. The eco-friendly cleaning cycle removes detergent residue and dirt buildup&mdash;without harsh chemicals. Not sure when to clean the tub? An alarm goes off after every 40 loads to remind you.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
